@@ -29,20 +29,10 @@ print(0 in mes)
 del mes[1]
 print(mes)
 
-nums = [3, 3]
-target = 6
-a = 0
-b = 0
-for item in nums:
-    for item2 in nums[(nums.index(item) + 1):]:
-        if (item + item2) == target:
-            a = item
-            b = item2
-            break
-    if (a + b) == target:
-        break
-if a == b:
-    ans = [nums.index(a), nums.index(b, 1)]
-else:
-    ans = [nums.index(a), nums.index(b)]
-print(f'[{ans[0]},{ans[1]}]')
+marks = [2, 2, 4, 4, 5]
+marks[1:3] = [4, 3]
+print(marks)
+
+
+
+
