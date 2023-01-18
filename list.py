@@ -33,6 +33,13 @@ marks = [2, 2, 4, 4, 5]
 marks[1:3] = [4, 3]
 print(marks)
 
+i = int(input())
 
+su = 1
 
+while i != 0:
+    su *= i % 10
+    i = i/10
+
+print(su)
 
